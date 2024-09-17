@@ -13,7 +13,7 @@ protocol ReaderProtocol: AnyObject {
 
 final class Reader {
     
-    weak var delegate: ReaderDelegateProtocol?
+    private weak var delegate: ReaderDelegateProtocol?
     
     init(delegate: ReaderDelegateProtocol?) {
         self.delegate = delegate
